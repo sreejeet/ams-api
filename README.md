@@ -1,7 +1,7 @@
 # ams-api
 An improved API for the MSI Achievement Management System, built using
 - Flask
-- Flask-RESTFul
+- Flask-RESTful
 - Flask-JWT-Extended
 - Flask-MongoAlchemy
 
@@ -16,10 +16,10 @@ $ python api.py
 This is a rough documentation.
 In case of any discrepancy, please create an issue or pull request on the github repository.
 All fields are of string type unless stated otherwise.
-JSON Web Tokens are to be sent in the request header in format:
-&nbsp;&nbsp;&nbsp;&nbsp;```Authorization: Bearer <Token>```
 
-Author: V S Sreejeet
+JSON Web Tokens are to be sent in the request header in format:
+
+```Authorization: Bearer <Token>```
 
 
 Format guide:
@@ -33,7 +33,7 @@ Format guide:
 			[required fields, JWT requirement]
 ```
 
-Api documentation
+Api documentation:
 ```
 User [Resource]
 	firstname
