@@ -3,9 +3,9 @@ from flask_restful import Resource
 import mongoalchemy
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-from models import AcademicAchievement
-from utils import checkBatch
-from api import api, URL_PREFIX
+from ..models import AcademicAchievement
+from ..utils import checkBatch
+from .. import api, URL_PREFIX
 
 
 @api.resource(URL_PREFIX+'/academics', URL_PREFIX+'/academics/<id>')

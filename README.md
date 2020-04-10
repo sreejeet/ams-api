@@ -1,3 +1,7 @@
+# Update
+This application now runs inside a docker container behind nginx and uWSGI. (My first ever docker app!)
+All mongodb data is stored on a local docker volume called ```amsapi_mongo```
+
 # ams-api
 An improved API for the MSI Achievement Management System, built using
 - Flask
@@ -5,11 +9,12 @@ An improved API for the MSI Achievement Management System, built using
 - Flask-JWT-Extended
 - Flask-MongoAlchemy
 
-To run, type
+To run, type:
 ```sh
-$ python3 api.py
-OR
-$ python api.py
+# First time run
+$ docker-compose up --build
+# Subsequent runs
+$ docker-compose up
 ```
 
 

@@ -1,0 +1,37 @@
+version: "3.5"
+
+services:
+
+  mongo:
+    image: 'mongo:3.4.1'
+    restart: always
+    expose:
+      - 27017
+    volumes:
+      - 'mongo:/data/db'
+
+  flask:
+    build: ./flask
+    container_name: flask
+    restart: always
+    environment:
+      - SECRET_KEY="supersecret9273tfg927"
+      - FLASK_DEBUG="False"
+      - MONGOALCHEMY_DATABASE="ams"
+      - MONGOALCHEMY_SERVER="mongo"
+      - MONGOALCHEMY_PORT="27017"
+      - APP_NAME=AmsApi
+    expose:
+      - 8080
+    depends_on:
+      - mongo
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+
+volumes:
+  mongo:

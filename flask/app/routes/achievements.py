@@ -3,9 +3,9 @@ from flask_restful import Resource
 import mongoalchemy
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-from models import Achievement
-from utils import convertToDate
-from api import api, URL_PREFIX
+from ..models import Achievement
+from ..utils import convertToDate
+from .. import api, URL_PREFIX
 
 
 @api.resource(URL_PREFIX+'/achievements', URL_PREFIX+'/achievements/<id>', endpoint='achievements')

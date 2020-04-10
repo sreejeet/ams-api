@@ -1,5 +1,5 @@
-from api import db
-from utils import convertFromDate
+from . import db
+from .utils import convertFromDate
 
 
 class User(db.Document):

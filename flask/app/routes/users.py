@@ -3,8 +3,8 @@ from flask_restful import Resource
 from passlib.context import CryptContext
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
-from models import User
-from api import api, URL_PREFIX, INVITE_CODE
+from ..models import User
+from .. import api, URL_PREFIX, INVITE_CODE
 
 
 def userAuth(email, password):
