@@ -7,7 +7,7 @@ Flask-JWT-Extended==3.24.1
 Flask-MongoAlchemy==0.7.2
 Flask-RESTful==0.3.8
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 MongoAlchemy==0.19
 passlib==1.7.2
