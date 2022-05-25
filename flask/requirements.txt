@@ -11,7 +11,7 @@ Jinja2==2.11.1
 MarkupSafe==1.1.1
 MongoAlchemy==0.19
 passlib==1.7.2
-PyJWT==1.7.1
+PyJWT==2.4.0
 pymongo==2.8.1
 pytz==2019.3
 pyuwsgi==2.0.18.post0
